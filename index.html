@@ -3,111 +3,303 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SJM Updates UG - Your Daily Source for What Matters.">
-  <title>SJM Updates UG | News Updates</title>
+  <meta name="description" content="SJM Updates UG - Latest news, breaking news, business, sports, education and entertainment updates from Uganda and around the world.">
+  <meta name="theme-color" content="#0b2942">
+  <title>SJM Updates UG | Latest News</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+
+      <a href="index.html" class="brand">
         <span class="brand-main">SJM</span>
         <span class="brand-sub">UPDATES UG</span>
       </a>
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-      <nav id="mainNav">
-        <a class="active" href="#home">Home</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#latest">Latest</a>
         <a href="#uganda">Uganda</a>
-        <a href="#world">World</a>
         <a href="#business">Business</a>
         <a href="#sports">Sports</a>
         <a href="#education">Education</a>
         <a href="#entertainment">Entertainment</a>
       </nav>
+
     </div>
   </header>
 
-  <main id="home">
-    <section class="breaking">
-      <div class="container breaking-inner">
-        <span class="breaking-label">BREAKING</span>
-        <p id="breakingText">Welcome to SJM Updates UG — your daily source for what matters.</p>
-      </div>
-    </section>
-
-    <section class="hero container">
-      <div class="hero-text">
-        <p class="eyebrow">WELCOME TO SJM UPDATES UG</p>
-        <h1>Your Daily Source for What Matters.</h1>
-        <p>Stay informed with the latest stories from Uganda and around the world.</p>
-        <a class="button" href="#latest">Read Latest News</a>
-      </div>
-    </section>
-
-    <section class="container section" id="latest">
-      <div class="section-heading">
-        <h2>Latest News</h2>
-        <span>Fresh updates</span>
-      </div>
-      <div class="news-grid" id="newsGrid"></div>
-    </section>
-
-    <section class="container section" id="uganda">
-      <div class="section-heading"><h2>Uganda</h2><span>National updates</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">UGANDA</span><h3>Latest national developments and community stories.</h3><p>Watch this space for verified local updates.</p></article>
-        <article class="mini-card"><span class="tag">COMMUNITY</span><h3>Stories from communities across the country.</h3><p>Local voices, events and important developments.</p></article>
-      </div>
-    </section>
-
-    <section class="container section" id="world">
-      <div class="section-heading"><h2>World</h2><span>International updates</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">WORLD</span><h3>Major international stories and developments.</h3><p>Global news presented clearly and simply.</p></article>
-      </div>
-    </section>
-
-    <section class="container section" id="business">
-      <div class="section-heading"><h2>Business</h2><span>Markets & enterprise</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">BUSINESS</span><h3>Business, entrepreneurship and market updates.</h3><p>Practical stories for entrepreneurs and businesses.</p></article>
-      </div>
-    </section>
-
-    <section class="container section" id="sports">
-      <div class="section-heading"><h2>Sports</h2><span>Scores & stories</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">SPORTS</span><h3>Sports news, results and major sporting stories.</h3><p>Follow the action from Uganda and beyond.</p></article>
-      </div>
-    </section>
-
-    <section class="container section" id="education">
-      <div class="section-heading"><h2>Education</h2><span>Schools & learning</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">EDUCATION</span><h3>Education news, opportunities and useful updates.</h3><p>Information for students, teachers and parents.</p></article>
-      </div>
-    </section>
-
-    <section class="container section" id="entertainment">
-      <div class="section-heading"><h2>Entertainment</h2><span>Culture & lifestyle</span></div>
-      <div class="mini-grid">
-        <article class="mini-card"><span class="tag">ENTERTAINMENT</span><h3>Music, film, culture and entertainment stories.</h3><p>Discover what's happening in the entertainment world.</p></article>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div>
-        <strong>SJM UPDATES UG</strong>
-        <p>Your Daily Source for What Matters.</p>
-      </div>
-      <div>
-        <p>© <span id="year"></span> SJM Updates UG. All rights reserved.</p>
+  <!-- BREAKING NEWS -->
+  <section class="breaking-bar">
+    <div class="container breaking-inner">
+      <span class="breaking-label">BREAKING</span>
+      <div class="breaking-text">
+        <span id="breakingNews">
+          Welcome to SJM Updates UG — your daily source for what matters.
+        </span>
       </div>
     </div>
+  </section>
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO SJM UPDATES UG</span>
+
+        <h1>Your Daily Source for What Matters.</h1>
+
+        <p>
+          Stay informed with the latest stories from Uganda and around
+          the world.
+        </p>
+
+        <a href="#latest" class="primary-btn">
+          Read Latest News
+        </a>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="search-section container">
+      <div class="search-box">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search news..."
+          aria-label="Search news"
+        >
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <!-- LATEST NEWS -->
+    <section class="news-section container" id="latest">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">STAY INFORMED</span>
+          <h2>Latest News</h2>
+        </div>
+        <span class="fresh">Fresh updates</span>
+      </div>
+
+      <div class="news-grid" id="newsContainer">
+
+        <article class="news-card">
+          <div class="news-image placeholder">
+            SJM
+          </div>
+
+          <div class="news-body">
+            <span class="category">UGANDA</span>
+
+            <h3>Welcome to SJM Updates UG</h3>
+
+            <p>
+              Your new destination for important news and updates from
+              Uganda and beyond.
+            </p>
+
+            <div class="article-meta">
+              <span>Today</span>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image placeholder">
+            BUSINESS
+          </div>
+
+          <div class="news-body">
+            <span class="category">BUSINESS</span>
+
+            <h3>Business & Entrepreneurship</h3>
+
+            <p>
+              Follow important business stories, entrepreneurs, markets
+              and opportunities.
+            </p>
+
+            <div class="article-meta">
+              <span>Today</span>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="news-image placeholder">
+            SPORTS
+          </div>
+
+          <div class="news-body">
+            <span class="category">SPORTS</span>
+
+            <h3>Sports Updates</h3>
+
+            <p>
+              Match reports, results, sporting events and major sports
+              stories.
+            </p>
+
+            <div class="article-meta">
+              <span>Today</span>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="noResults" class="no-results" hidden>
+        No stories found.
+      </p>
+
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories-section container">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE</span>
+          <h2>News Categories</h2>
+        </div>
+      </div>
+
+      <div class="category-grid">
+
+        <a href="#uganda" class="category-box">
+          <span class="category-icon">🇺🇬</span>
+          <strong>Uganda</strong>
+          <small>National news</small>
+        </a>
+
+        <a href="#business" class="category-box">
+          <span class="category-icon">💼</span>
+          <strong>Business</strong>
+          <small>Business & markets</small>
+        </a>
+
+        <a href="#sports" class="category-box">
+          <span class="category-icon">⚽</span>
+          <strong>Sports</strong>
+          <small>Sports updates</small>
+        </a>
+
+        <a href="#education" class="category-box">
+          <span class="category-icon">🎓</span>
+          <strong>Education</strong>
+          <small>Schools & learning</small>
+        </a>
+
+        <a href="#entertainment" class="category-box">
+          <span class="category-icon">🎬</span>
+          <strong>Entertainment</strong>
+          <small>Entertainment news</small>
+        </a>
+
+        <a href="#world" class="category-box">
+          <span class="category-icon">🌍</span>
+          <strong>World</strong>
+          <small>International news</small>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section container">
+      <div class="about-card">
+
+        <span class="eyebrow">ABOUT SJM UPDATES UG</span>
+
+        <h2>News that keeps you informed.</h2>
+
+        <p>
+          SJM Updates UG is a growing digital news platform focused on
+          delivering useful, timely and engaging stories to our readers.
+        </p>
+
+        <p>
+          Our coverage will include Uganda, business, sports, education,
+          entertainment and major stories from around the world.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter container">
+      <div>
+        <span class="eyebrow">STAY CONNECTED</span>
+        <h2>Never miss an important update.</h2>
+        <p>Follow SJM Updates UG for the latest stories.</p>
+      </div>
+
+      <a
+        href="https://wa.me/"
+        class="whatsapp-btn"
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp Updates
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-grid">
+
+      <div>
+        <div class="footer-brand">SJM UPDATES UG</div>
+        <p>
+          Your daily source for what matters.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#latest">Latest News</a>
+        <a href="#business">Business</a>
+        <a href="#sports">Sports</a>
+      </div>
+
+      <div>
+        <h3>More</h3>
+        <a href="#education">Education</a>
+        <a href="#entertainment">Entertainment</a>
+        <a href="#uganda">Uganda</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 SJM Updates UG. All rights reserved.
+      </p>
+    </div>
+
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
